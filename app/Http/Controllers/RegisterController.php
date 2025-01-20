@@ -25,7 +25,6 @@ class RegisterController extends Controller
             'password' => 'required|string|min:8', 
         ]);
 
-        // Create a new user and save to the database
         $user = new User();
         $user->first_name = $request->first_name;
         $user->last_name = $request->last_name;
