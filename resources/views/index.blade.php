@@ -28,7 +28,7 @@
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/" class="text-md/6 font-semibold text-gray-900">Home</a>
         <a href="{{ route('login') }}" class="text-md/6 font-semibold text-gray-900">Reviews</a>
-        <a href="#" class="text-md/6 font-semibold text-gray-900">About</a>
+        <!-- <a href="#" class="text-md/6 font-semibold text-gray-900">About</a> -->
         <a href="#" class="text-md/6 font-semibold text-gray-900">Contact</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -57,7 +57,7 @@
             <div class="space-y-2 py-6">
               <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
               <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Reviews</a>
-              <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About</a>
+              <!-- <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About</a> -->
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
             </div>
             <div class="py-6">
@@ -75,7 +75,7 @@
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="text-center">
-        <h1 class="text-balance text-5xl font-semibold tracking-tight text-red-600 sm:text-7xl">Are You Brave Enough to Try This?</h1>
+        <h1 class="text-balance text-5xl font-semibold tracking-tight text-red-400 sm:text-7xl">Are You Brave Enough to Try This?</h1>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Enjoy a wide selection of top recommendations, just for you.<br>Let’s get started! It only takes a minute to join.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="{{ route('login') }}" class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
