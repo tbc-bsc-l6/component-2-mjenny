@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<div class="bg-orange-50">
+<div class="bg-white-50">
   <header class="absolute inset-x-0 top-0 z-50">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
@@ -27,7 +27,7 @@
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="/" class="text-md/6 font-semibold text-gray-900">Home</a>
-        <a href="{{ route('register') }}" class="text-md/6 font-semibold text-gray-900">Products</a>
+        <a href="{{ route('login') }}" class="text-md/6 font-semibold text-gray-900">Reviews</a>
         <a href="#" class="text-md/6 font-semibold text-gray-900">About</a>
         <a href="#" class="text-md/6 font-semibold text-gray-900">Contact</a>
       </div>
@@ -56,7 +56,7 @@
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
               <a href="/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Home</a>
-              <a href="{{ route('register') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Products</a>
+              <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Reviews</a>
               <a href="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About</a>
               <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
             </div>
@@ -78,7 +78,7 @@
         <h1 class="text-balance text-5xl font-semibold tracking-tight text-red-600 sm:text-7xl">Are You Brave Enough to Try This?</h1>
         <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Enjoy a wide selection of top recommendations, just for you.<br>Let’s get started! It only takes a minute to join.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="{{ route('register') }}" class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+          <a href="{{ route('login') }}" class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
           <!-- <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a> -->
         </div>
       </div>

@@ -25,8 +25,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('product', function () {
-    return view('product'); 
+Route::middleware(['auth'])->get('/product', function () {
+    return view('product'); // Return the product view
 })->name('product');
 
 Route::get('/', function () {
