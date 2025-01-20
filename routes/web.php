@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AboutController;
 
 // Route to show the login form
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login.form');
@@ -26,8 +27,17 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth'])->get('/product', function () {
-    return view('product'); // Return the product view
+    return view('product'); 
 })->name('product');
+
+Route::middleware(['auth'])->get('/profile', function () {
+    return view('profile');
+})->name('profile');
+
+Route::middleware(['auth'])->get('/about', function () {
+    return view('about');
+})->name('about');
+
 
 Route::get('/', function () {
     return view('index'); 

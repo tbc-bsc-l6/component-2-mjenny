@@ -1,6 +1,7 @@
-<x-layout>
-<x-slot:heading>
-        this is the about page.
-    </x-slot:heading>
-    <h1>about</h1>
-</x-layout>
+@extends('layout.layout')
+
+@section('title', 'About Page')
+
+@section('content')
+<h1>Profile Page</h1>
+@endsection
