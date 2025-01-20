@@ -15,7 +15,11 @@ Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']); 
 Route::post('logout', [LoginController::class, 'logout'])->name('logout'); 
 
-Route::get('register', [RegisterController::class, 'showRegisterForm'])->name('register');
+//Route for registration
+
+Route::get('register', [RegisterController::class, 'showRegistrationForm'])->name('register'); 
+Route::post('register', [RegisterController::class, 'store'])->name('register.store'); 
+
 // Auth::routes();
 Route::get('/', function () {
     return view('index');
